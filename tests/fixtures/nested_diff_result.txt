@@ -1,0 +1,44 @@
+{
+  common: {
+  + follow: false
+    node1: val 1
+  - node2: 200
+  - node3: true
+  + node3: null
+  + node4: blah
+  + node5: {
+      key5: val5
+    }
+    node6: {
+      doge: {
+      - wow: 
+      + wow: cool
+      }
+      key: val
+    + ops: vops
+    }
+  }
+  group1: {
+  - baz: bas
+  + baz: bars
+    foo: bar
+  - nest: {
+      key: val
+    }
+  + nest: str
+  }
+- group2: {
+    abc: 12345
+    deep: {
+      id: 45
+    }
+  }
++ group3: {
+    deep: {
+      id: {
+        number: 45
+      }
+    }
+    fee: 101
+  }
+}

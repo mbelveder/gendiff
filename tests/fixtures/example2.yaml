@@ -1,0 +1,21 @@
+common:
+  follow: false
+  node1: val 1
+  node3: null
+  node4: blah
+  node5:
+    key5: val5
+  node6:
+    doge:
+      wow: cool
+    key: val
+    ops: vops
+group1:
+  baz: bars
+  foo: bar
+  nest: str
+group3:
+  deep:
+    id:
+      number: 45
+  fee: 101

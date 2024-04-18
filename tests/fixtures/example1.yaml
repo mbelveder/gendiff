@@ -1,0 +1,17 @@
+common:
+  node1: val 1
+  node2: 200
+  node3: true
+  node6:
+    doge:
+      wow: ''
+    key: val
+group1:
+  baz: bas
+  foo: bar
+  nest:
+    key: val
+group2:
+  abc: 12345
+  deep:
+    id: 45
