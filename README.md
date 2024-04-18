@@ -8,6 +8,8 @@ Works both with JSON and YAML files and supports pretty-printed (default), plain
 
 [![asciicast](https://asciinema.org/a/HuOgkKzA76RJu0G6MsUYq7OMM.svg)](https://asciinema.org/a/HuOgkKzA76RJu0G6MsUYq7OMM)
 
+Created during the [Hexlet](https://ru.hexlet.io/programs/python) "Python developer" course.
+
 ### Requirements
 
 - Python 3.11 or higher
