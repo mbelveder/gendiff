@@ -8,7 +8,7 @@ A Python package to generate a diff between two nested structures.
 
 Works both with JSON and YAML files and supports pretty-printed (default), plain and json-string output format:
 
-[![asciicast](https://asciinema.org/a/HuOgkKzA76RJu0G6MsUYq7OMM.svg)](https://asciinema.org/a/HuOgkKzA76RJu0G6MsUYq7OMM)
+[![asciicast](docs/media/asciinema.png)](https://asciinema.org/a/HuOgkKzA76RJu0G6MsUYq7OMM)
 
 Created during the [Hexlet](https://ru.hexlet.io/programs/python) "Python developer" course.
 
