@@ -1,0 +1,13 @@
+{
+    "common": {
+      "node1": "val 1",
+      "node2": 200,
+      "node3": true,
+      "node6": {
+        "key": "val",
+        "doge": {
+          "wow": ""
+        }
+      }
+    }
+}
