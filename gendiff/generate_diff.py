@@ -47,8 +47,10 @@ def generate_diff(file_path1, file_path2, formatter='stylish'):
     ast_tree = sort_dict(generate_ast_diff(dict1, dict2))
 
     if formatter == 'stylish':
-        formatted_tree = stylish(dict1, dict2, ast_tree)
+        return stylish(dict1, dict2, ast_tree)
     elif formatter == 'plain':
-        formatted_tree = plain(dict1, dict2, ast_tree)
-
-    return formatted_tree
+        return plain(dict1, dict2, ast_tree)
+    elif formatter == 'json':
+        return ast_tree
+    else:
+        raise ValueError(f"Invalid formatter: {formatter}")
