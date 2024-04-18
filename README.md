@@ -8,8 +8,19 @@ Works both with JSON and YAML files and supports pretty-printed (default), plain
 
 [![asciicast](https://asciinema.org/a/HuOgkKzA76RJu0G6MsUYq7OMM.svg)](https://asciinema.org/a/HuOgkKzA76RJu0G6MsUYq7OMM)
 
+### Requirements
 
-<details>
+- Python 3.11 or higher
+- Git
+
+
+### Installation
+
+```
+git install git+https://github.com/mbelveder/gendiff.git
+```
+
+<!-- <details>
 <summary>Example (open on a wide screen)</summary>
 <table>
 <tr>
@@ -142,7 +153,7 @@ Works both with JSON and YAML files and supports pretty-printed (default), plain
 </tr>
 </table>
 
-</details>
+</details> -->
 
 
 ### Topics covered:
@@ -151,7 +162,7 @@ Works both with JSON and YAML files and supports pretty-printed (default), plain
 
 - Recursive tree traversal
 
-- Separation of abstraction layers (the diff itself is separate from its representations)
+- Separation of abstraction layers (the [diff itself](https://github.com/mbelveder/gendiff/blob/e2e005ddab480fcbc5a80a70fa71f466e8c0e808/gendiff/generate_diff.py#L16) is separate from its representations)
 
 - Continuous integration via GitHub Actions
 
