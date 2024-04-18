@@ -93,7 +93,7 @@ Created during the [Hexlet](https://ru.hexlet.io/programs/python) "Python develo
 ### Installation
 
 ```
-git install git+https://github.com/mbelveder/gendiff.git
+pip3 install git+https://github.com/mbelveder/gendiff.git
 ```
 
 
