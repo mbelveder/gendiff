@@ -39,7 +39,10 @@ def generate_ast_diff(node1, node2):
     return ast_tree
 
 
-def generate_diff(file_path1, file_path2, formatter='stylish'):
+def generate_diff(
+        file_path1, file_path2, formatter='stylish',
+        replacer=' ', increment=4
+):
     '''Generates a difference between two nested json files'''
 
     dict1 = transform_bool(parse_data(file_path1))
@@ -48,7 +51,9 @@ def generate_diff(file_path1, file_path2, formatter='stylish'):
     ast_tree = sort_dict(generate_ast_diff(dict1, dict2))
 
     if formatter == 'stylish':
-        result_string = stylish(dict1, dict2, ast_tree)
+        result_string = stylish(
+            dict1, dict2, ast_tree, replacer, increment
+        )
     elif formatter == 'plain':
         result_string = plain(dict1, dict2, ast_tree)
     elif formatter == 'json':

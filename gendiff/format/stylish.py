@@ -63,7 +63,7 @@ def stringify(value, replacer=' ', spaces_count=4):
     return walk(value)
 
 
-def stylish(dict1, dict2, ast_tree):
+def stylish(dict1, dict2, ast_tree, replacer=' ', increment=4):
 
     labelled_diff = label_stylish(dict1, dict2, ast_tree)
-    return stringify(labelled_diff)
+    return stringify(labelled_diff, replacer, increment)
