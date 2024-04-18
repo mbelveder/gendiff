@@ -48,6 +48,7 @@ Works both with JSON and YAML files and supports pretty-printed (default), plain
     }
   }
 ```
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
 </td>
 <td style="vertical-align:top">
@@ -85,6 +86,8 @@ Works both with JSON and YAML files and supports pretty-printed (default), plain
   }
 }
 ```
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
 </td>
 </td>
 <td style="vertical-align:top">
