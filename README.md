@@ -4,6 +4,10 @@
 
 A Python package to generate a diff between two nested structures.
 
+```
+gendiff nested_node1.json nested_node2.json
+```
+
 ![Example](docs/media/example.png)
 
 <details>
