@@ -23,7 +23,7 @@ def main():
     # with open('tests/fixtures/nested_diff_result.txt', 'w') as f:
     #     f.write(diff)
 
-    return diff
+    print(diff)
 
 
 if __name__ == "__main__":
