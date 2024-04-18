@@ -86,7 +86,7 @@ Works both with JSON and YAML files and supports pretty-printed (default), plain
   }
 }
 ```
-<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
 </td>
 </td>
