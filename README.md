@@ -4,7 +4,7 @@
 
 A Python package to generate a diff between two nested structures.
 
-![Example](https://i.ibb.co/znRm6k6/2024-04-18-14-15-46.png)
+![Example](docs/media/example.png)
 
 Works both with JSON and YAML files and supports pretty-printed (default), plain and json-string output format:
 
