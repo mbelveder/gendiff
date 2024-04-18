@@ -19,8 +19,10 @@ def get_value(d, keys):
     value = get_nested(d, keys)
     if isinstance(value, (tuple, list, dict)):
         return '[complex value]'
+    elif value in ['true', 'false', 'null'] or isinstance(value, (int, float)):
+        return value
     else:
-        return value if value in ['true', 'false', 'null'] else f"'{value}'"
+        return f"'{value}'"
 
 
 def label_plain(dict1, dict2, ast_tree):
