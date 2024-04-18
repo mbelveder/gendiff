@@ -18,6 +18,12 @@ def load_txt(filename):
     return data
 
 
+def load_json(filename):
+    with open(filename, 'r') as f:
+        data = json.load(f)
+    return data
+
+
 @pytest.mark.parametrize('filename, filename_expected', [
     ('file1.json', 'file1.json'),
     ('file1.yaml', 'file1.json'),
@@ -67,6 +73,22 @@ def test_generate_plain_diff(filename1, filename2, filename_expected):
     filepath_expected = get_file_path(filename_expected)
     diff12 = generate_diff(filepath1, filepath2, formatter='plain')
     expected_string = load_txt(filepath_expected)
+
+    assert diff12 == expected_string
+
+
+@pytest.mark.parametrize('filename1, filename2, filename_expected', [
+    ('nested1.json', 'nested2.json', 'nested_diff.json'),
+    ('nested1.yaml', 'nested2.json', 'nested_diff.json'),
+    ('nested1.yaml', 'nested2.yaml', 'nested_diff.json')
+])
+def test_generate_json_diff(filename1, filename2, filename_expected):
+    '''Tests basic behaviour with a plain formatter'''
+    filepath1 = get_file_path(filename1)
+    filepath2 = get_file_path(filename2)
+    filepath_expected = get_file_path(filename_expected)
+    diff12 = generate_diff(filepath1, filepath2, formatter='json')
+    expected_string = load_json(filepath_expected)
 
     assert diff12 == expected_string
 
