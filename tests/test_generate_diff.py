@@ -88,7 +88,9 @@ def test_generate_json_diff(filename1, filename2, filename_expected):
     filepath2 = get_file_path(filename2)
     filepath_expected = get_file_path(filename_expected)
     diff12 = generate_diff(filepath1, filepath2, formatter='json')
-    expected_string = load_json(filepath_expected)
+    expected_string = json.dumps(
+        load_json(filepath_expected), indent=4
+    )
 
     assert diff12 == expected_string
 
