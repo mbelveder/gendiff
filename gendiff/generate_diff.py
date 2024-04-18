@@ -1,5 +1,6 @@
 from gendiff.parser import parse_data, transform_bool
 from gendiff.format import plain, stylish
+import json
 
 
 def sort_dict(d):
@@ -47,10 +48,12 @@ def generate_diff(file_path1, file_path2, formatter='stylish'):
     ast_tree = sort_dict(generate_ast_diff(dict1, dict2))
 
     if formatter == 'stylish':
-        return stylish(dict1, dict2, ast_tree)
+        result_string = stylish(dict1, dict2, ast_tree)
     elif formatter == 'plain':
-        return plain(dict1, dict2, ast_tree)
+        result_string = plain(dict1, dict2, ast_tree)
     elif formatter == 'json':
-        return ast_tree
+        result_string = json.dumps(ast_tree, indent=4)
     else:
         raise ValueError(f"Invalid formatter: {formatter}")
+
+    return result_string
