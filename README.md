@@ -24,7 +24,7 @@ Created during the [Hexlet](https://ru.hexlet.io/programs/python) "Python develo
 git install git+https://github.com/mbelveder/gendiff.git
 ```
 
-<!-- <details>
+<details>
 <summary>Example (open on a wide screen)</summary>
 <table>
 <tr>
@@ -47,61 +47,27 @@ git install git+https://github.com/mbelveder/gendiff.git
           "wow": ""
         }
       }
-    },
-    "group1": {
-      "baz": "bas",
-      "foo": "bar",
-      "nest": {
-        "key": "val"
-      }
-    },
-    "group2": {
-      "abc": 12345,
-      "deep": {
-        "id": 45
-      }
     }
-  }
+}
 ```
-<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
 </td>
 <td style="vertical-align:top">
     
 ```json
 {
-  "common": {
-    "follow": false,
-    "node1": "val 1",
-    "node3": null,
-    "node4": "blah",
-    "node5": {
-      "key5": "val5"
-    },
-    "node6": {
-      "key": "val",
-      "ops": "vops",
-      "doge": {
-        "wow": "cool"
+    "common": {
+      "node1": "val 1",
+      "node3": true,
+      "node5": "got ya",
+      "node6": {
+        "doge": {
+          "wow": "cool"
+        }
       }
     }
-  },
-  "group1": {
-    "foo": "bar",
-    "baz": "bars",
-    "nest": "str"
-  },
-  "group3": {
-    "deep": {
-      "id": {
-        "number": 45
-      }
-    },
-    "fee": 101
-  }
 }
 ```
-<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
 </td>
 </td>
@@ -109,55 +75,26 @@ git install git+https://github.com/mbelveder/gendiff.git
     
 ```text
 {
-  common: {
-  + follow: false
-    node1: val 1
-  - node2: 200
-  - node3: true
-  + node3: null
-  + node4: blah
-  + node5: {
-      key5: val5
+    common: {
+        node1: val 1
+      - node2: 200
+        node3: true
+      + node5: got ya
+        node6: {
+            doge: {
+              - wow: 
+              + wow: cool
+            }
+          - key: val
+        }
     }
-    node6: {
-      doge: {
-      - wow: 
-      + wow: cool
-      }
-      key: val
-    + ops: vops
-    }
-  }
-  group1: {
-  - baz: bas
-  + baz: bars
-    foo: bar
-  - nest: {
-      key: val
-    }
-  + nest: str
-  }
-- group2: {
-    abc: 12345
-    deep: {
-      id: 45
-    }
-  }
-+ group3: {
-    deep: {
-      id: {
-        number: 45
-      }
-    }
-    fee: 101
-  }
 }
 ```
 </td>
 </tr>
 </table>
 
-</details> -->
+</details>
 
 
 ### Topics covered:
