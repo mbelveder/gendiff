@@ -6,30 +6,12 @@ A Python package to generate a diff between two nested structures.
 
 ![Example](docs/media/example.png)
 
-Works both with JSON and YAML files and supports pretty-printed (default), plain and json-string output format:
-
-[![asciicast](docs/media/asciinema.png)](https://asciinema.org/a/HuOgkKzA76RJu0G6MsUYq7OMM)
-
-Created during the [Hexlet](https://ru.hexlet.io/programs/python) "Python developer" course.
-
-### Requirements
-
-- Python 3.11 or higher
-- Git
-
-
-### Installation
-
-```
-git install git+https://github.com/mbelveder/gendiff.git
-```
-
 <details>
 <summary>Example (open on a wide screen)</summary>
 <table>
 <tr>
-<td > file1.json </td>
-<td > file2.json </td>
+<td > nested_node1.json </td>
+<td > nested_node2.json </td>
 <td > diff </td>
 </tr>
 <tr>
@@ -95,6 +77,24 @@ git install git+https://github.com/mbelveder/gendiff.git
 </table>
 
 </details>
+
+Works both with JSON and YAML files and supports pretty-printed (default), plain and json-string output format:
+
+[![asciicast](docs/media/asciinema.png)](https://asciinema.org/a/HuOgkKzA76RJu0G6MsUYq7OMM)
+
+Created during the [Hexlet](https://ru.hexlet.io/programs/python) "Python developer" course without any mentoring.
+
+### Requirements
+
+- Python 3.11 or higher
+- Git
+
+
+### Installation
+
+```
+git install git+https://github.com/mbelveder/gendiff.git
+```
 
 
 ### Topics covered:
