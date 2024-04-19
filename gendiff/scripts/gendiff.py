@@ -23,7 +23,9 @@ def main():
     )
     args = parser.parse_args()
 
-    if args.format != 'stylish' and (args.replacer != ' ' or args.increment != 4):
+    if args.format != 'stylish' and (
+        args.replacer != ' ' or args.increment != 4
+    ):
         raise ValueError(
             "The --replacer and --increment flags can only be used"
             "with the default --format argument (stylish)"
