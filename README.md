@@ -9,7 +9,31 @@ gendiff nested_node1.json nested_node2.json
 ```
 ![Example](docs/media/example.png)
 
-Example files are located at [tests/fixtures](tests/fixtures) directory.
+Example files are located at [tests/fixtures](tests/fixtures).
+
+Supports custom replacers and indent increments for the `stylish` (default) output:
+
+```
+gendiff nested_node1.json nested_node2.json --replacer  ⏐ --increment 2
+```
+
+```
+{
+⏐⏐common: {
+⏐⏐⏐⏐node1: val 1
+⏐⏐- node2: 200
+⏐⏐⏐⏐node3: true
+⏐⏐+ node5: got ya
+⏐⏐⏐⏐node6: {
+⏐⏐⏐⏐⏐⏐doge: {
+⏐⏐⏐⏐⏐⏐- wow: 
+⏐⏐⏐⏐⏐⏐+ wow: cool
+⏐⏐⏐⏐⏐⏐}
+⏐⏐⏐⏐- key: val
+⏐⏐⏐⏐}
+⏐⏐}
+}
+```
 
 <!-- <details>
 <summary>Example (open on a wide screen)</summary>
@@ -83,9 +107,10 @@ Example files are located at [tests/fixtures](tests/fixtures) directory.
 
 </details> -->
 
-The package works both with JSON and YAML files and supports pretty-printed (default), plain and json-string output format:
+The package works both with JSON and YAML files and supports `stylish` (default), `plain` and `json` output format:
 
 [![asciicast](docs/media/asciinema.png)](https://asciinema.org/a/HuOgkKzA76RJu0G6MsUYq7OMM)
+
 
 Created during the [Hexlet](https://ru.hexlet.io/programs/python) "Python developer" course without any mentoring.
 
@@ -100,7 +125,7 @@ Created during the [Hexlet](https://ru.hexlet.io/programs/python) "Python develo
 ```
 pip3 install git+https://github.com/mbelveder/gendiff.git
 ```
-
+***
 
 ### Topics covered:
 
