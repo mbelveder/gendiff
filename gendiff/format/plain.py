@@ -3,10 +3,12 @@ def normalize(item):
 
 
 def flatten(tree):
+    '''Flattens a nested list'''
     return sum(map(normalize, tree), [])
 
 
-def get_nested(d, keys):
+def get_nested(d: dict, keys: list):
+    '''Gets a value from a nested list via absolute path'''
     for key in keys:
         if isinstance(d, dict):
             d = d.get(key)
@@ -16,6 +18,7 @@ def get_nested(d, keys):
 
 
 def get_value(d, keys):
+    '''Postprocess a value obtained from the get_nested()'''
     value = get_nested(d, keys)
     if isinstance(value, (tuple, list, dict)):
         return '[complex value]'
@@ -26,6 +29,7 @@ def get_value(d, keys):
 
 
 def label_plain(dict1, dict2, ast_tree):
+    '''Generates a plain diff representation'''
 
     change_types = {
         'added': "Property '{}' was added with value: {}",
