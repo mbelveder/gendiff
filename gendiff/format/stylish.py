@@ -14,6 +14,7 @@ def label_stylish(node1, node2, ast_node):
             formatted_tree[f'+ {key}'] = node2[key]
         elif ast_node[key] == 'unchanged':
             formatted_tree[f'{key}'] = node1[key]
+        # If the node has children, continue recursively
         elif isinstance(ast_node[key], dict):
             formatted_tree[f'{key}'] = label_stylish(
                 node1[key], node2[key], ast_node[key]
@@ -48,6 +49,7 @@ def stringify(value, replacer=' ', spaces_count=4):
             if not isinstance(children, dict):
                 item_str = filler + f'{name}: {children}'
             else:
+                # If there are a dict among children, continue recursively
                 item_str = filler + f'{name}: {walk(children, depth + 1)}'
 
             return item_str
