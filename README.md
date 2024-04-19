@@ -38,7 +38,7 @@ gendiff nested_node1.json nested_node2.json --replacer  ⏐ --increment 2
 And `plain` output format:
 
 ```
-poetry run gendiff --format plain nested_node1.json nested_node2.json
+gendiff --format plain nested_node1.json nested_node2.json
 ```
 
 ```
@@ -120,7 +120,7 @@ Property 'common.node6.key' was removed
 
 </details> -->
 
-The package works both with JSON and YAML files and supports `stylish` (default), `plain` and `json` output format:
+The package works both with JSON and YAML files. The `json` output format shows what happened to each node (`added`, `deleted`, `changed` or `unchanged`):
 
 [![asciicast](docs/media/asciinema.png)](https://asciinema.org/a/HuOgkKzA76RJu0G6MsUYq7OMM)
 
