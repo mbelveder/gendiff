@@ -7,10 +7,11 @@ A Python package to generate a diff between two nested structures.
 ```
 gendiff nested_node1.json nested_node2.json
 ```
-
 ![Example](docs/media/example.png)
 
-<details>
+Example files are located at [tests/fixtures](tests/fixtures) directory.
+
+<!-- <details>
 <summary>Example (open on a wide screen)</summary>
 <table>
 <tr>
@@ -80,9 +81,9 @@ gendiff nested_node1.json nested_node2.json
 </tr>
 </table>
 
-</details>
+</details> -->
 
-Works both with JSON and YAML files and supports pretty-printed (default), plain and json-string output format:
+The package works both with JSON and YAML files and supports pretty-printed (default), plain and json-string output format:
 
 [![asciicast](docs/media/asciinema.png)](https://asciinema.org/a/HuOgkKzA76RJu0G6MsUYq7OMM)
 
@@ -107,8 +108,8 @@ pip3 install git+https://github.com/mbelveder/gendiff.git
 
 - Recursive tree traversal
 
-- Separation of abstraction layers (the [diff itself](https://github.com/mbelveder/gendiff/blob/e2e005ddab480fcbc5a80a70fa71f466e8c0e808/gendiff/generate_diff.py#L16) is separate from its representations)
+- Separation of abstraction layers (the [diff itself](https://github.com/mbelveder/gendiff/blob/e2e005ddab480fcbc5a80a70fa71f466e8c0e808/gendiff/generate_diff.py#L16) is separate from its [representations](gendiff/format))
 
-- Continuous integration via GitHub Actions
+- Continuous integration via [GitHub Actions](https://github.com/features/actions)
 
 - Dependency management via [Poetry](https://python-poetry.org/)
