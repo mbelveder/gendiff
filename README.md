@@ -35,6 +35,19 @@ gendiff nested_node1.json nested_node2.json --replacer  ⏐ --increment 2
 }
 ```
 
+And `plain` output format:
+
+```
+poetry run gendiff --format plain nested_node1.json nested_node2.json
+```
+
+```
+Property 'common.node2' was removed
+Property 'common.node5' was added with value: 'got ya'
+Property 'common.node6.doge.wow' was updated. From '' to 'cool'
+Property 'common.node6.key' was removed
+```
+
 <!-- <details>
 <summary>Example (open on a wide screen)</summary>
 <table>
