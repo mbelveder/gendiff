@@ -4,6 +4,7 @@ import json
 
 
 def sort_dict(d):
+    '''Recursively sorts the keys of a (nested) dictionary'''
     sorted_dict = {}
     for k, v in sorted(d.items()):
         if isinstance(v, dict):
