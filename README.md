@@ -9,7 +9,7 @@ gendiff nested_node1.json nested_node2.json
 ```
 ![Example](docs/media/example.png)
 
-Example files are located at [tests/fixtures](tests/fixtures).
+Example input files are located at [tests/fixtures](tests/fixtures).
 
 Supports custom replacers and indent increments for the `stylish` (default) output:
 
@@ -35,7 +35,7 @@ gendiff nested_node1.json nested_node2.json --replacer  ⏐ --increment 2
 }
 ```
 
-And `plain` output format:
+And the `plain` output format:
 
 ```
 gendiff --format plain nested_node1.json nested_node2.json
@@ -127,13 +127,13 @@ The package works both with JSON and YAML files. The `json` output format shows 
 
 Created during the [Hexlet](https://ru.hexlet.io/programs/python) "Python developer" course without any mentoring.
 
-### Requirements
+
+### Installation
+
+#### Requirements
 
 - Python 3.11 or higher
 - Git
-
-
-### Installation
 
 ```
 pip3 install git+https://github.com/mbelveder/gendiff.git
