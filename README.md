@@ -146,8 +146,6 @@ pip3 install git+https://github.com/mbelveder/gendiff.git
 
 - Recursive tree traversal
 
-- Separation of abstraction layers (the [diff itself](https://github.com/mbelveder/gendiff/blob/e2e005ddab480fcbc5a80a70fa71f466e8c0e808/gendiff/generate_diff.py#L16) is separate from its [representations](gendiff/format))
-
 - Continuous integration via [GitHub Actions](https://github.com/features/actions)
 
 - Dependency management via [Poetry](https://python-poetry.org/)
