@@ -3,6 +3,7 @@ import yaml
 
 
 def transform_value(value):
+    '''Transforms boolean values to a propper format'''
     if isinstance(value, dict):
         return transform_bool(value)
     elif value is None:
